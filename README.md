@@ -1,87 +1,81 @@
-# Welcome to React Router!
+# MiniBlog
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Um projeto de blog desenvolvido em React com Firebase, baseado no curso de React do Matheus Battisti.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🚀 Tecnologias
 
-## Features
+- **React** 19.1.0
+- **React Router DOM** 7.7.0
+- **Firebase** 12.0.0 (Firestore)
+- **Tailwind CSS** 4.1.11
+- **Vite** 7.0.4
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 📋 Funcionalidades Atuais
 
-## Getting Started
+- ✅ Navegação entre páginas (Home e About)
+- ✅ Navbar responsiva com links ativos
+- ✅ Footer
+- ✅ Configuração do Firebase/Firestore
+- ✅ Estrutura de páginas para Login e Registro
+- ✅ Estilização com Tailwind CSS
 
-### Installation
+## 🔧 Instalação
 
-Install the dependencies:
+1. Clone o repositório:
+```bash
+git clone <url-do-repositorio>
+cd miniblog
+```
 
+2. Instale as dependências:
 ```bash
 npm install
 ```
 
-### Development
+3. Configure o Firebase:
+   - Crie um projeto no [Firebase Console](https://console.firebase.google.com/)
+   - Ative o Firestore Database
+   - Substitua as configurações em `src/firebase/config.js`
 
-Start the development server with HMR:
-
+4. Execute o projeto:
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+## 📁 Estrutura do Projeto
 
 ```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
+src/
+├── components/
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Login.jsx
+│   └── Register.jsx
+├── firebase/
+│   └── config.js
+├── App.jsx
+└── main.jsx
 ```
 
-## Styling
+## 🎯 Próximas Funcionalidades
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+- [ ] Sistema de autenticação (Login/Registro)
+- [ ] Criação de posts
+- [ ] Listagem de posts
+- [ ] Edição e exclusão de posts
+- [ ] Sistema de busca
+- [ ] Dashboard do usuário
 
----
+## 📝 Scripts Disponíveis
 
-Built with ❤️ using React Router.
+- `npm run dev` - Executa o projeto em modo de desenvolvimento
+- `npm run build` - Gera a build de produção
+- `npm run preview` - Visualiza a build de produção
+- `npm run lint` - Executa o linter
+
+## 🔗 Referência
+
+Projeto baseado no curso de React do [Matheus Battisti](https://github.com/matheusbattisti/curso_react/tree/main/10_MINI_BLOG/miniblog).
